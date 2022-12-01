@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate a news article with NLP</title>
+    </head>
+
+    <body>
+
+        <div class="noise"> </div>
+        <header>
+            <h1>SenseAI</h1>
+
+            <p>
+                SenseAI is a web application that allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites using the MeaningCloud API and technology. NLP is the ability of an application to understand the human language, written or oral.
+            </p>
+        </header>
+
+        <main>
+            
+
+               
+
+            <section class="errors">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <div id="error"></div>
+            </section> 
+
+
+            <section class="formContainer">
+
+                <h2>Submit a "URL" to see what SenseAI and MeaningCloud understand from it.</h2>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="inputURL" type="url" placeholder="Enter URL">
+                    <button id ="submit" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)"> /Submit/</button>
+                </form>
+            </section>
+
+            <section class="url-results">
+                    <div>
+                        <div>
+                            <div class="resultData">
+                                <h3>Polarity:</h3>
+                                <p id="polarity"></p>
+                            </div>
+                            <div class="resultData">
+                                <h4>Confidence: </h4>
+                                <p id="polarity_confidence"></p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="resultData">
+                                <h3>Subjectivity:</h3>
+                                <p id="subjectivity"></p>
+                            </div>
+                            <div class="resultData">
+                                <h4>Confidence: </h4>
+                                <p id="subjectivity_confidence"></p>
+                            </div>
+                        </div>
+                        
+                        <div class="resultData">
+                            <h3>Text Excerpt:</h3>
+                            <p id="excerpt"></p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>SenseAI: Natural Language Processing</p>
+            <p>based on MeaningCloud Technology</p>
+        </footer>
+
+
+        <script src="../index.js"></script>
+
+        <script>
+                if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+                        console.log('SW registered successfuly: ', registration);
+                    });
+                });
+                }else{
+                console.log("Service Working not supported");
+                    }
+        </script>
+
+
+
+    </body>
+</html>
