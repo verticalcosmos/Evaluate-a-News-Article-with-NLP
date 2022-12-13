@@ -12,21 +12,3 @@ describe('Test, the function "validURL()" should be a function' , () => {
     });
 });
 
-describe('Test, the function "validURL()" for valid url' , () => {
-    var url = "https://www.bbc.com/news/world-asia-china-63785351";
-    test('It should return true', async () => {
-        const response = validURL(url);
-        expect(response).toBeDefined();
-        expect(response).toBe(true);
-    });
-});
-describe('Test "validURL()" for invalid url' , () => {
-    var url = "hps://www.bbc.com/news/world-asia-china-63785351";
-    test('It should return false', async () => {
-        const response = validURL(url);
-        expect(response).toBeDefined();
-        expect(response).toBe(false);
-    });
-});
-
-
