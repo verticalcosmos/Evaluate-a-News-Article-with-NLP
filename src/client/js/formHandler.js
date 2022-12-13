@@ -2,14 +2,8 @@
 
 const baseURL = "https://api.meaningcloud.com/sentiment-2.1?key=";
 const apikey = "e9d317ced0cdba52633ba073aac57a86";
-//const apikey = apikey.env.API_KEY;
 const docURL = "https://www.bbc.com/news/world-asia-china-63785351";
-//const submit = document.getElementById("submit");
 
-//submit.addEventListener("click", getURL);
-//function getURL(){
-//   const docURL = document.getElementById("inputURL");
-//}
 
 const apiURL = baseURL + apikey + '&url=' + docURL + '&lang=en';
 console.log(apiURL);
