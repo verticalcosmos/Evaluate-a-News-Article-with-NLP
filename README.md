@@ -13,6 +13,6 @@ The page is usable across modern browsers.
 - Then you can run development environment: npm run build-dev
 - For error testing please run JEST testing: npm test
 - To run production environment and build dist folder: npm run build-prod
-- In the browser run local server (http://localhost:8081/) or in ternminal type: npm run start
+- In the browser run local server (http://localhost:8080/) or in ternminal type: npm run start
 
 
