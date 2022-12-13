@@ -15,13 +15,14 @@ The page is usable across modern browsers.
 . Service workers
 . MeaningCloud API
 . Node Express
+. Unit Testing using Jest Framework
 
 ## Running:
 
 - Make sure that you installed node.js
 - Make sure that you installed all modules listed as dependencies in package.json file using terminal command line: npm install
 - Then you can run development environment: npm run build-dev
-- For error testing please run JEST testing: npm test
+- For unit testing using Jest: npm test
 - To run production environment and build dist folder: npm run build-prod
 - In the browser run local server (http://localhost:8080/) or in ternminal type: npm run start
 
