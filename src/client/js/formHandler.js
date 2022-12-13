@@ -6,7 +6,6 @@ const docURL = "https://www.bbc.com/news/world-asia-china-63785351";
 
 
 const apiURL = baseURL + apikey + '&url=' + docURL + '&lang=en';
-console.log(apiURL);
 
 
     //API request data
