@@ -7,14 +7,14 @@ The page is usable across modern browsers.
 
 ## Technologies Used:
 
-HTML
-Vanilla JavaScript
-Webpack
-CSS/SCSS (Sass)
-Webpack Loaders and Plugins
-Service workers
-MeaningCloud API
-Node Express
+. HTML
+. Vanilla JavaScript
+. Webpack
+. CSS/SCSS (Sass)
+. Webpack Loaders and Plugins
+. Service workers
+. MeaningCloud API
+. Node Express
 
 ## Running:
 
