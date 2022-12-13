@@ -22,7 +22,6 @@ const apiURL = baseURL + apikey + '&url=' + docURL + '&lang=en';
         document.getElementById("subjectivity").innerHTML = data.irony;
         document.getElementById("subjectivity_confidence").innerHTML = data.score_tag;
         
-          console.log(data)
         
       } else {
         console.log('error')
